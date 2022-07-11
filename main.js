@@ -1,7 +1,7 @@
 let arr = [1, 2, 3, 4, 5, 6];
-let n = 4;
+let n = 6;
 let binarySearch = (arr,low, high, n) => {
-    let mid = Math.floor((low+high)/2)//2
+    let mid = Math.floor(low+(high-low)/2)//2
     if(arr[mid]===n){
         console.log(`found at position ${mid}`);
         return;
